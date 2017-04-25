@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 public class Fragment3 extends Fragment {
 
     /**
-     * 
+     *
      * @param inflater
      * @param container
      * @param savedInstanceState
