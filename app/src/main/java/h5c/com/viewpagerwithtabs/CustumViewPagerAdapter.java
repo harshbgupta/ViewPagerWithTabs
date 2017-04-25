@@ -10,10 +10,20 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class CustumViewPagerAdapter extends FragmentPagerAdapter {
 
+    /**
+     * Supre Constructor
+     * @param fm
+     */
     public CustumViewPagerAdapter(FragmentManager fm) {
         super(fm);
     }
 
+
+    /**
+     * call fragment based on select tabs
+     * @param position selected rab position
+     * @return Fragment
+     */
     @Override
     public Fragment getItem(int position) {
         switch (position){
@@ -30,18 +40,28 @@ public class CustumViewPagerAdapter extends FragmentPagerAdapter {
         return null;
     }
 
+
+    /**
+     * for setting no of tabs
+     * @return no of tabs
+     */
     @Override
     public int getCount() {
         //3 pages
         return 3;
     }
 
+    /**
+     * for setting tab title
+     * @param position
+     * @return
+     */
     @Override
     public CharSequence getPageTitle(int position) {
         switch (position){
-            case 0: return "Harsh";
-            case 1: return "Happie";
-            case 2: return "Lucifer";
+            case 0: return "Fragment 1";
+            case 1: return "Fragment 2";
+            case 2: return "Fragment 3";
         }
         return null;
     }
